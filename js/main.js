@@ -177,5 +177,33 @@
 	contentWayPoint();
 
 
+
+	var WhatsappFrom = function() {
+		document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+			event.preventDefault(); // Formun varsayılan gönderimini engelle
+		
+			// Formdaki değerleri al
+			var name = document.getElementsByName("name")[0].value;
+			var phone = document.getElementsByName("phone")[0].value;
+			var address = document.getElementsByName("address")[0].value;
+			var service = document.getElementsByName("service")[0].value;
+		
+			// WhatsApp mesaj metnini oluştur
+			var message = "Ad: " + name + "\n";
+			message += "Telefon: " + phone + "\n";
+			message += "Adres: " + address + "\n";
+			message += "Hizmet: " + service;
+		
+			// WhatsApp URL'sini oluştur
+			var whatsappUrl = "https://api.whatsapp.com/send?phone=46762601008&text=" + encodeURIComponent(message);
+		
+			// WhatsApp'ı yeni sekmede aç
+			window.open(whatsappUrl, "_blank");
+		  });
+	};
+	WhatsappFrom();
+
+
+
 })(jQuery);
 

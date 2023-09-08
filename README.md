@@ -18,7 +18,7 @@ Bmerix'in web sitesi, modern ve kullanıcı dostu bir tasarıma sahiptir. Sitede
 
 ---
 
-Bmerix Web Sitesi**,**  [Burak Meriç](https://github.com/burakmrc) tarafından tasarlanmış ve geliştirilmiştir. 🚀🚀🚀
+Bmerix Web Sitesi, [Burak Meriç](https://github.com/burakmrc) tarafından tasarlanmış ve geliştirilmiştir. 🚀🚀🚀
 
 ### **Lisans✔️**
 

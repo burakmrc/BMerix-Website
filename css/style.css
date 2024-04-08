@@ -2444,8 +2444,8 @@ fieldset:disabled a.btn {
   .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
   .show > .btn-outline-dark.dropdown-toggle {
     color: #fff;
-    background-color: #343a40;
-    border-color: #343a40; }
+    background-color: #F5CF4A;
+    border-color: #F5CF4A; }
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-dark.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
@@ -8027,7 +8027,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   .wrap .phone {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8); }
+    color: #004AAD; }
     .wrap .phone a {
       color: white;
       font-size: 12px; }
@@ -8087,7 +8087,7 @@ h1, h2, h3, h4, h5,
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
+    color: #004AAD;
     position: relative;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
@@ -8172,7 +8172,7 @@ h1, h2, h3, h4, h5,
           display: none; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: #004AAD !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8200,7 +8200,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #000000; }
+     }
   .hero-wrap.hero-wrap-2 {
     height: 500px; }
     .hero-wrap.hero-wrap-2 .overlay {
@@ -8948,7 +8948,7 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 4em 0; } }
 
 .ftco-bg-dark {
   background: #33313b !important; }
@@ -9692,6 +9692,62 @@ textarea.form-control {
         font-size: 30px;
       }
 
+      .portfolio-menu{
+        text-align:center;
+      }
+      .portfolio-menu ul li{
+        display:inline-block;
+        margin:0;
+        list-style:none;
+        padding:10px 15px;
+        cursor:pointer;
+        -webkit-transition:all 05s ease;
+        -moz-transition:all 05s ease;
+        -ms-transition:all 05s ease;
+        -o-transition:all 05s ease;
+        transition:all .5s ease;
+      }
+      .portfolio-item .item{
+        /*width:303px;*/
+        float:left;
+        margin-bottom:10px;
+        padding-inline-start: 10px;
+      }
+  
+      .more-btn{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: inline-block;
+        outline: none;
+        vertical-align: middle;
+        text-decoration: none;
+        transition: all, 0.5s, cubic-bezier(0.65,-0.25,0.25,1.95);
+        font-weight: 900;
+        text-transform: uppercase;
+        &:hover, &:focus, &:active {
+        letter-spacing: 0.125rem;
+          }
+        }
+
+        .baslik {
+          display: contents !important;
+        }
+        .baslik>img{
+          width: 10%;
+          margin-top: 10px;
+        }
+
 #ftco-loader {
   position: fixed;
   width: 96px;
@@ -9786,33 +9842,61 @@ textarea.form-control {
 
     @media only screen and (max-width: 768px) {
       .yazi {
-        text-align: center;
+        text-align: center ;
+        text-align: -webkit-center;
       }
-    }
-    @media only screen and (max-width: 768px) {
-      .yazim {
-        margin-bottom: 330px;
-      }
-    }
 
-    @media only screen and (max-width: 768px) {
+      .yazim {
+        margin-bottom: 78%;
+      }
+
       .baslik {
         display: contents;
       }
-    }
-    @media only screen and (max-width: 768px) {
-      .renk {
-        background: #508a9b !important;
+      .baslik>img{
+        width: 23%;
       }
-    }
-    @media only screen and (max-width: 768px) {
+
       .bloge {
         font-size: 20px;
       }
-      
-    }
-    @media (max-width: 767px) {
+
       .background-imagen {
         background-image: url('/images/bg2.png') !important;
       }
+      .background-imagen2 {
+        background-image: url('/images/bg3.png') !important;
+      }
+      .background-imagen3 {
+        background-image: url('/images/bg4.png') !important;
+      }
+      .background-imagen4 {
+        background-image: url('/images/bg5.png') !important;
+      }
+      .orta {
+        margin: 0 20px;
+      }
+      .paddingd {
+        padding: 40px 0 0 0 !important;
+      }
+      .paddingb {
+        padding-bottom:0 !important;
+      }
+      .paddingt {
+        padding-top:0 !important;
+      }
+      .paddingx {
+        padding: 0 5px !important;
+      }
+      .navbar .dropdown-content {
+        display: block;
+        background-color: #e9ecef;
+        text-align: center;
+        border-radius: 5%;
+      }
+      .navi {
+        position: absolute !important;
+        }
     }
+  
+ 
